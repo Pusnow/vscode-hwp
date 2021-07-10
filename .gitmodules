@@ -1,0 +1,3 @@
+[submodule "hwpjs"]
+	path = hwpjs
+	url = https://github.com/hahnlee/hwp.js.git
