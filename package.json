@@ -2,7 +2,7 @@
   "name": "hwp",
   "displayName": "vscode-hwp",
   "description": "Display hwp file in VSCode.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "pusnow",
   "engines": {
     "vscode": "^1.46.0"
@@ -48,7 +48,7 @@
     "test": "node ./out/test/runTest.js",
     "lint": "eslint -c .eslintrc.json --ext .ts ./src",
     "package": "vsce package",
-    "build-hwp": "cd hwpjs && npm install && npx rollup -c rollup.config.js && mkdir -p ../lib/hwp && cp extension/content/{hwp.js,viewer.css} ../lib/hwp/"
+    "build-hwp": "cd hwpjs && yarn && npx rollup -c rollup.config.js && mkdir -p ../lib/hwp && cp extension/content/{hwp.js,viewer.css} ../lib/hwp/"
   },
   "dependencies": {
     "@types/vscode": "^1.46.0"
